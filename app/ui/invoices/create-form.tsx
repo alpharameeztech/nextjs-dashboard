@@ -133,7 +133,14 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
               </div>
           </div>
         </fieldset>
+
+        {state.message && (
+          <div className="mt-4 rounded-md bg-red-100 p-3 text-sm text-red-700">
+            {state.message}
+          </div>
+        )}
       </div>
+      
       <div className="mt-6 flex justify-end gap-4">
         <Link
           href="/dashboard/invoices"

@@ -51,29 +51,28 @@ This is a modern **dashboard web app** built with [Next.js](https://nextjs.org/)
 
 ## 🚀 Getting Started
 
-# Clone the repository
-git clone https://github.com/<your-username>/<your-repo>.git
+### 1. Clone the Repository
+
+```bash
+git clone [repo link]
 cd <your-repo>
 
-# Install dependencies
 yarn install
 # or
 npm install
 
-# Create a .env file in the root directory and add the following:
+## .env file
+POSTGRES_URL=
+POSTGRES_PRISMA_URL=
+POSTGRES_URL_NON_POOLING=
+POSTGRES_USER=
+POSTGRES_HOST=
+POSTGRES_PASSWORD=
+POSTGRES_DATABASE=
 
-### PostgreSQL connection strings
-POSTGRES_URL="postgres://<USER>:<PASSWORD>@<HOST>:5432/<DATABASE>"
-POSTGRES_PRISMA_URL="postgresql://<USER>:<PASSWORD>@<HOST>:5432/<DATABASE>?schema=public"
-POSTGRES_URL_NON_POOLING="postgresql://<USER>:<PASSWORD>@<HOST>:5432/<DATABASE>?schema=public&pooling=false"
-POSTGRES_USER=<your_postgres_user>
-POSTGRES_HOST=<your_postgres_host>
-POSTGRES_PASSWORD=<your_postgres_password>
-POSTGRES_DATABASE=<your_database_name>
-
-### Authentication
+# Authentication
 AUTH_SECRET=<your_generated_secret_key>
 AUTH_URL=http://localhost:3000/api/auth
 
-# To generate a secure AUTH_SECRET, run the following command in your terminal:
+## To generate a secure AUTH_SECRET, run:
 openssl rand -base64 32

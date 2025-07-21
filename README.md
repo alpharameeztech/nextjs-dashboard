@@ -2,6 +2,13 @@
 
 This is a modern **dashboard web app** built with [Next.js](https://nextjs.org/).The application displays **customer data**, **invoices**, and **statistics**, including dynamic charts and tables, ideal for using extending it for any project.
 
+[Demo Link](https://nextjs-dashboard-ww9r-1ysuldaxc-krameez56-gmailcoms-projects.vercel.app/)
+
+### Login credentails
+<b>Email</b>: user@nextmail.com <br />
+<b>Password</b>: 123456
+
+
 ---
 
 ## ✨ Features
@@ -46,8 +53,4 @@ git clone [repo]
 cd [direcotry]
 
 yarn start
-
-### Login credentails
-<b>Email</b>: user@nextmail.com <br />
-<b>Password</b>: 123456
 
